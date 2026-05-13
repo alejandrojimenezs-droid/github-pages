@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tour Paises</title>
+		<style>
+			*{
+				box-sizing:border-box;
+			}
+
+			body{
+				margin:0;
+				background-image:url(fondo1.png);
+				background-repeat:repeat;
+				background-size:cover;
+				font-size:25px;
+				font-family:Arial;
+			}
+
+			div.contenedor{
+				margin:auto;
+				width:75%;
+				margin-top:10px;
+				display:flex;
+				flex-wrap:wrap;
+			}
+
+			header{
+				background:white;
+				width:100%;
+				border-bottom:2px solid red;
+			}
+
+			header ul{
+				display:flex;
+				list-style:none;
+				padding:0;
+				margin:0;
+			}
+
+			header li{
+				padding:30px;
+				transition:0.3s;
+			}
+
+			header li:hover{
+				background:lightblue;
+			}
+
+			header a{
+				text-decoration:none;
+				color:black;
+				font-weight:bold;
+			}
+
+			main{
+				background:white;
+				width:100%;
+				padding:40px;
+				height:750px;
+				text-align:center;
+
+				background-image:url(mapa.png);
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size:70%;
+			}
+
+			main h1{
+				font-size:50px;
+				color:#222;
+				margin-top:50px;
+			}
+
+			main h3{
+				background:rgba(255,255,255,0.85);
+				padding:20px;
+				border-radius:10px;
+				line-height:40px;
+			}
+
+			footer{
+				background:black;
+				color:white;
+				width:100%;
+				padding:20px;
+				text-align:center;
+			}
+
+			footer a{
+				color:lightblue;
+				text-decoration:none;
+			}
+
+			footer a:hover{
+				text-decoration:underline;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="contenedor">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="paises.html">Paises</a></li>
+						<li><a href="noticias.html">Noticias</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<h1>Tour Paises</h1>
+				<h3>
+					En esta página web encontrarás los mejores destinos
+					para tus vacaciones en 2026.
+					Además, si deseas estar informado sobre las noticias
+					del país puedes acceder a la sección de noticias
+					en el menú.
+				</h3>
+			</main>
+			<footer>
+				<h4>
+					Esta página está en pleno desarrollo.
+					Si encuentras algún bug/error o simplemente quieres
+					aportar al desarrollo de esta misma,
+					por favor contáctanos en
+					<a href="contacto.html">CONTACTO</a>.
+				</h4>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tour Paises</title>
+	<style>
+		*{
+			box-sizing:border-box;
+		}
+		body{
+			margin:0;
+			background-image:url(fondo1.png);
+			background-repeat:repeat;
+			background-size:cover;
+			font-size:25px;
+			font-family:Arial;
+		}
+		div.contenedor{
+			margin:auto;
+			width:75%;
+			margin-top:10px;
+			display:flex;
+			flex-wrap:wrap;
+		}
+		header{
+			background:white;
+			width:100%;
+			border-bottom:2px solid red;
+		}
+		header ul{
+			display:flex;
+			list-style:none;
+			padding:0;
+			margin:0;
+		}
+		header li{
+			padding:30px;
+			transition:0.3s;
+		}
+		header li:hover{
+			background:lightblue;
+		}
+		header a{
+			text-decoration:none;
+			color:black;
+			font-weight:bold;
+		}
+		aside{
+			width:20%;
+			background:#222;
+			padding:10px;
+		}
+		aside div.divaside{
+			background:white;
+			padding:10px;
+			border-radius:5px;
+		}
+		aside summary{
+			font-weight:bold;
+			cursor:pointer;
+		}
+		aside ul{
+			padding-left:25px;
+		}
+		aside a{
+			text-decoration:none;
+			color:blue;
+		}
+		main{
+			background:white;
+			width:80%;
+			padding:20px;
+		}
+		main h1{
+			background:lightblue;
+			text-align:center;
+			padding:15px;
+			border-radius:5px;
+		}
+		div.noticia{
+			background:#f5f5f5;
+			padding:20px;
+			margin-top:20px;
+			border-left:8px solid lightblue;
+			border-radius:5px;
+		}
+		div.noticia h3{
+			margin-top:0;
+		}
+		div.noticia p{
+			line-height:35px;
+		}
+		div.noticia a{
+			text-decoration:none;
+			color:blue;
+		}
+		div.noticia a:hover{
+			text-decoration:underline;
+		}
+		footer{
+			background:black;
+			color:white;
+			width:100%;
+			text-align:center;
+			padding:15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="paises.html">Paises</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<aside>
+			<div class="divaside">
+				<details>
+					<summary>Noticias</summary>
+					<ul>
+						<li><a href="#esp">Noticias en España</a></li>
+						<li><a href="#isl">Noticias en Islandia</a></li>
+						<li><a href="#swi">Noticias en Suiza</a></li>
+					</ul>
+				</details>
+			</div>
+		</aside>
+
+		<main id="inicio">
+
+			<section class="country">
+
+				<h1>Noticias Internacionales</h1>
+
+				<div class="noticia" id="esp">
+					<h3>España impulsa el turismo en 2026</h3>
+					<p>
+						España ha anunciado nuevas inversiones para mejorar
+						las zonas turísticas y aumentar la llegada de visitantes
+						internacionales durante el verano de 2026.
+					</p>
+					<a href="https://www.abc.es/">Leer más</a>
+				</div>
+
+				<div class="noticia" id="isl">
+					<h3>Islandia registra aumento de visitantes</h3>
+					<p>
+						El turismo en Islandia continúa creciendo gracias
+						a sus paisajes naturales, volcanes y auroras boreales,
+						convirtiéndose en uno de los destinos más visitados.
+					</p>
+					<a href="https://icelandjournal.com/">Leer más</a>
+				</div>
+
+				<div class="noticia" id="swi">
+					<h3>Suiza mejora sus servicios turísticos</h3>
+					<p>
+						Suiza ha mejorado las conexiones ferroviarias y los
+						servicios de montaña para facilitar el acceso a los
+						principales destinos turísticos del país.
+					</p>
+					<a href="https://switzerlandjournal.com/">Leer más</a>
+				</div>
+
+			</section>
+
+		</main>
+
+		<footer>
+			<p>© 2026 Tour Paises - Noticias</p>
+		</footer>
+
+	</div>
+</body>
+</html>

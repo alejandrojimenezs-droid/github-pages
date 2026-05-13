@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tour Paises</title>
+	<style>
+		*{
+			box-sizing:border-box;
+		}
+		body{
+			margin:0;
+			background-image:url(fondo1.png);
+			background-repeat:repeat;
+			background-size:cover;
+			font-size:25px;
+			font-family:Arial;
+		}
+		div.contenedor{
+			margin:auto;
+			width:75%;
+			margin-top:10px;
+			display:flex;
+			flex-wrap:wrap;
+		}
+		header{
+			background:white;
+			width:100%;
+			border-bottom:2px solid red;
+		}
+		header ul{
+			display:flex;
+			list-style:none;
+			padding:0;
+			margin:0;
+		}
+		header li{
+			padding:30px;
+			transition:0.3s;
+		}
+		header li:hover{
+			background:lightblue;
+		}
+		header a{
+			text-decoration:none;
+			color:black;
+			font-weight:bold;
+		}
+		aside{
+			width:20%;
+			background:#222;
+			padding:10px;
+		}
+		aside div.divaside{
+			background:white;
+			padding:10px;
+			border-radius:5px;
+		}
+		aside summary{
+			cursor:pointer;
+			font-weight:bold;
+		}
+		aside ul{
+			padding-left:25px;
+		}
+		aside a{
+			text-decoration:none;
+			color:blue;
+		}
+		main{
+			background:white;
+			width:80%;
+			padding:20px;
+		}
+		main section.country{
+			width:100%;
+		}
+		main section.country h1{
+			background:lightblue;
+			text-align:center;
+			padding:15px;
+			border-radius:5px;
+		}
+		main div.pais1,
+		main div.pais2,
+		main div.pais3{
+			padding:20px;
+			margin:20px 0;
+			border-radius:10px;
+		}
+		main a{
+			text-decoration:none;
+			color:blue;
+		}
+		main a:hover{
+			text-decoration:underline;
+		}
+		main div.pais1{
+			background:#FFFB87;
+		}
+		main div.pais2{
+			background:#17CEFF;
+		}
+		main div.pais3{
+			background:#FF5454;
+		}
+		main img{
+			width:45%;
+			border-radius:10px;
+			box-shadow:0 0 10px rgba(0,0,0,0.3);
+		}
+		main div.img{
+			display:flex;
+			justify-content:space-around;
+			padding:20px;
+			gap:20px;
+		}
+		main h3{
+			margin-top:0;
+		}
+		p{
+			line-height:35px;
+		}
+		footer{
+			background:black;
+			color:white;
+			width:100%;
+			text-align:center;
+			padding:15px;
+		}
+		table{
+			width:100%;
+			border-collapse:collapse;
+			margin-top:20px;
+		}
+
+		th{
+			background:lightblue;
+		}
+		th,td{
+			padding:15px;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="paises.html">Paises</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<aside>
+			<div class="divaside">
+				<details>
+					<summary>Paises</summary>
+					<ul>
+						<li><a href="#esp">España</a></li>
+						<li><a href="#isl">Islandia</a></li>
+						<li><a href="#swi">Suiza</a></li>
+					</ul>
+				</details>
+			</div>
+		</aside>
+		<main id="inicio">
+			<section class="country">
+				<h1>Paises</h1>
+				<h2>Tabla de destinos</h2>
+				<table border="1">
+					<tr>
+						<th>País</th>
+						<th>Capital</th>
+						<th>Idioma</th>
+					</tr>
+
+					<tr>
+						<td>España</td>
+						<td>Madrid</td>
+						<td>Español</td>
+					</tr>
+
+					<tr>
+						<td>Islandia</td>
+						<td>Reikiavik</td>
+						<td>Islandés</td>
+					</tr>
+
+					<tr>
+						<td>Suiza</td>
+						<td>Berna</td>
+						<td>Alemán / Francés</td>
+					</tr>
+				</table>
+				<div class="pais1" id="esp">
+					<h3>España</h3>
+					<p>
+						España, formalmente Reino de España, es un país soberano transcontinental,
+						constituido en Estado social y democrático de derecho y cuya forma de gobierno
+						es la monarquía parlamentaria. Es uno de los veintisiete Estados soberanos
+						que forman la Unión Europea.
+					</p>
+					<details>
+						<summary>Mas Información</summary>
+						<a href="https://es.wikipedia.org/wiki/Espa%C3%B1a">Click aqui para acceder a Wikipedia</a>
+					</details>
+					<div class="img">
+						<img src="esp1.png">
+						<img src="esp2.png">
+					</div>
+					<p><a href="#inicio">Volver al inicio</a></p>
+				</div>
+				<div class="pais2" id="isl">
+					<h3>Islandia</h3>
+					<p>
+						Islandia es un país insular europeo situado en el océano Atlántico.
+						Su capital es Reikiavik y destaca por sus volcanes, glaciares,
+						montañas y paisajes naturales únicos.
+					</p>
+					<details>
+						<summary>Mas Información</summary>
+						<a href="https://es.wikipedia.org/wiki/Islandia">Click aqui para acceder a Wikipedia</a>
+					</details>
+					<div class="img">
+						<img src="isl1.png">
+						<img src="isl2.png">
+					</div>
+					<p><a href="#inicio">Volver al inicio</a></p>
+				</div>
+				<div class="pais3" id="swi">
+					<h3>Suiza</h3>
+					<p>
+						Suiza es un país ubicado en Europa central y es conocido por sus
+						montañas, bancos, calidad de vida y paisajes alpinos.
+						Tiene cuatro idiomas oficiales y una gran estabilidad económica.
+					</p>
+					<details>
+						<summary>Mas Información</summary>
+						<a href="https://es.wikipedia.org/wiki/Suiza">Click aqui para acceder a Wikipedia</a>
+					</details>
+					<div class="img">
+						<img src="swi1.png">
+						<img src="swi2.png">
+					</div>
+					<p><a href="#inicio">Volver al inicio</a></p>
+				</div>
+
+			</section>
+		</main>
+
+		<footer>
+			<p>© 2026 Tour Paises</p>
+		</footer>
+	</div>
+</body>
+</html>
